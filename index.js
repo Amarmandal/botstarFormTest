@@ -1,4 +1,3 @@
-console.log("Hello, world");
 function onChatBotReady() {
   var btnName = BotStarWebview('getParameter', 'buttonName');
 
@@ -11,6 +10,7 @@ function onChatBotReady() {
 }
 
 function sendResponse() {
+  event.preventDefault();
   BotStarWebview('sendResponse', "", {} ,  'Button Clicked').catch((err) => {
     console.log(err);
   });

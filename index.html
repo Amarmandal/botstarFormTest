@@ -9,10 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Just a Youtube Player</h1>
+    <h1>Custom Bot Star form integration</h1>
     <div class="wrapper">
-      <h3>Click the button below to go back</h3>
-      <div id="btn" onclick="sendResponse()"></div>
+      <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <div id="btn" onclick="sendResponse()"></div>
+      </form>
     </div>
 
     <script src="index.js"></script>
