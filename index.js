@@ -10,7 +10,7 @@ function onChatBotReady() {
 }
 
 function sendResponse() {
-  BotStarWebview('sendResponse', state, { currentSeconds }, 'Button Clicked').catch((err) => {
+  BotStarWebview('sendResponse', "", {} ,  'Button Clicked').catch((err) => {
     console.log(err);
   });
 }
