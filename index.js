@@ -1,3 +1,4 @@
+console.log("Hello, world");
 function onChatBotReady() {
   var btnName = BotStarWebview('getParameter', 'buttonName');
 
